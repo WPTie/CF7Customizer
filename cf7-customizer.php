@@ -36,6 +36,45 @@ if ( ! defined( 'WPINC' ) ) {
     die;
 }
 
+// If this file is called directly, abort.
+if ( ! defined( 'WPINC' ) ) {
+    die;
+}
+
+// Create a helper function for easy SDK access.
+function cc_fs() {
+    global $cc_fs;
+
+    if ( ! isset( $cc_fs ) ) {
+        // Include Freemius SDK.
+        require_once dirname(__FILE__) . '/freemius/start.php';
+
+	    $cc_fs = fs_dynamic_init( array(
+		    'id'             => '91',
+		    'slug'           => 'cf7-customizer',
+		    'public_key'     => 'pk_0b419183244d583e3b33a7736921c',
+		    'is_live'        => true,
+		    'is_premium'     => false,
+		    'has_addons'     => false,
+		    'has_paid_plans' => false,
+		    'menu'           => array(
+			    'slug'    => 'cfc_welcome_page',
+			    'account' => false,
+			    'contact' => false,
+			    'support' => false,
+			    'parent'  => array(
+				    'slug' => 'wpcf7',
+			    )
+		    ),
+	    ) );
+    }
+
+    return $cc_fs;
+}
+
+// Init Freemius.
+cc_fs();
+
 /**
  * Define global constants
  *
