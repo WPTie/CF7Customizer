@@ -36,11 +36,6 @@ if ( ! defined( 'WPINC' ) ) {
     die;
 }
 
-// If this file is called directly, abort.
-if ( ! defined( 'WPINC' ) ) {
-    die;
-}
-
 // Create a helper function for easy SDK access.
 function cc_fs() {
     global $cc_fs;
