@@ -1,5 +1,7 @@
 #CF7 Customizer
 
+[![Join the chat at https://gitter.im/WPTie/CF7Customizer](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/WPTie/CF7Customizer?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![DEV](https://img.shields.io/badge/Dev-%E2%86%92-lightgrey.svg)](https://github.com/WPTie/CF7Customizer/releases)
 [![Build Status](https://travis-ci.org/WPTie/CF7Customizer.svg?branch=master)](https://travis-ci.org/WPTie/CF7Customizer)
 [![Dependency Status](https://david-dm.org/WPTie/CF7Customizer.svg)](https://david-dm.org/WPTie/CF7Customizer)
